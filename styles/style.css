@@ -1,0 +1,84 @@
+@font-face {
+    font-family: plexMono;
+    src: url(/fonts/IBMPlexMono-Regular.ttf);
+}
+
+* {
+    font-family: plexMono;
+}
+
+h1 {
+    padding: 20px 20px 0;
+}
+
+.letter {
+    background-color: #f0f0f0;
+    max-width: 600px;
+    padding: 25px 20px 30px;
+    border-radius: 10px;
+    margin-bottom: 200px;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.btn {
+    display: inline-block;
+    margin: 10px 0;
+    background-color: #5D3FD3;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    border: 3px solid #4B0082;
+    transition: all 0.3s ease;
+    position: relative;
+    top: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+    background-color: #4B0082;
+    color: #ffffff;
+}
+
+.btn:active {
+    background-color: #3A0066;
+    color: #ffffff;
+    top: 3px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.btn.secondary {
+    background-color: #ffffff;
+    color: #5D3FD3;
+    border: 3px solid #5D3FD3;
+}
+
+.btn.secondary:hover {
+    background-color: #f0f0f0;
+    color: #4B0082;
+    border-color: #4B0082;
+}
+
+.btn.secondary:active {
+    background-color: #e0e0e0;
+    color: #3A0066;
+    border-color: #3A0066;
+    top: 3px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+@media (width <=600px) {
+    .letter {
+        max-width: 100%;
+    }
+}
